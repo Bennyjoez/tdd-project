@@ -35,13 +35,13 @@ describe Solver do
       it 'fizz if number is divisible by 3' do
         expect(@solve.fizzbuzz(3)).to eql('fizz')
       end
-  
+
       it 'buzz if number is divisible by 5' do
         expect(@solve.fizzbuzz(5)).to eql('buzz')
       end
 
       it 'fizzbuzz if number is divisble by 3 and 5' do
-        expect(@solve.fizzbuzz(15).to eql('fizzbuzz'))
+        expect(@solve.fizzbuzz(15)).to eql('fizzbuzz')
       end
 
       it 'a string for all other values' do
