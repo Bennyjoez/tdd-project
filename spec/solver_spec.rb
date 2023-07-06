@@ -19,4 +19,14 @@ describe Solver do
       expect(@solve.factorial(5)).to eql(120)
     end
   end
+
+  describe '#reverse' do
+    it 'Should reverse word' do
+      expect(@solve.reverse('hello').to(eql('olleh')))
+    end
+
+    it 'Should reverse numbers given as a string' do
+      expect(@solve.reverse('123').to(eql('321')))
+    end
+  end
 end
