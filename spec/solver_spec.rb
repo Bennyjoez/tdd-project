@@ -29,4 +29,28 @@ describe Solver do
       expect(@solve.reverse('123')).to eql('321')
     end
   end
+
+  describe '#fizzbuzz' do
+    context 'Should return' do
+      it 'fizz if number is divisible by 3' do
+        expect(@solve.fizzbuzz(3)).to eql('fizz')
+      end
+  
+      it 'buzz if number is divisible by 5' do
+        expect(@solve.fizzbuzz(5)).to eql('buzz')
+      end
+
+      it 'fizzbuzz if number is divisble by 3 and 5' do
+        expect(@solve.fizzbuzz(15).to eql('fizzbuzz'))
+      end
+
+      it 'throws an error for numbers not multiples of 3, or 5' do
+        expect { @solve.fizzbuzz(4) }.to raise_error(ArgumentError, 'num should be a multiple of 3/5')
+      end
+
+      it 'throws an argument error for not a number' do
+        expect { @solve.fizzbuzz('n') }.to raise_error(ArgumentError, 'element should be a number')
+      end
+    end
+  end
 end
