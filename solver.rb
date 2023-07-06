@@ -1,26 +1,4 @@
 class Solver
-<<<<<<< HEAD
-    def factorial(n)
-        if n < 0
-          raise ArgumentError("Not a positive interger")
-        end
-      
-        if n == 0
-          return 1
-        end
-      
-        factorial = 1
-        for i in 1..n
-          factorial *= i
-        end
-      
-        return factorial
-    end
-    def reverse(word)
-        return word.reverse
-    end
-end
-=======
   def factorial(num)
     raise ArgumentError, 'num should be an integer' if num.negative?
 
@@ -33,5 +11,12 @@ end
 
     factorial
   end
+  def reverse(word)
+    reversed_word = ""
+    for i in word.length - 1 downto 0
+      reversed_word += word[i]
+    end
+  
+    return reversed_word
+  end
 end
->>>>>>> 7fece95d159add3d03604936ce0bf82790556401
