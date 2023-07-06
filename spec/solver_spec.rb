@@ -44,12 +44,8 @@ describe Solver do
         expect(@solve.fizzbuzz(15).to eql('fizzbuzz'))
       end
 
-      it 'throws an error for numbers not multiples of 3, or 5' do
-        expect { @solve.fizzbuzz(4) }.to raise_error(ArgumentError, 'num should be a multiple of 3/5')
-      end
-
-      it 'throws an argument error for not a number' do
-        expect { @solve.fizzbuzz('n') }.to raise_error(ArgumentError, 'element should be a number')
+      it 'a string for all other values' do
+        expect(@solve.fizzbuzz(4)).to eql('4')
       end
     end
   end
