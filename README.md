@@ -29,7 +29,7 @@
 
 ### 📖 TDD Project <a name="about-project"></a>
 
-**TDD project** in OOP, can be modeled as a class that inherits from the Library class. The SchoolLibrary class would have additional attributes and methods that are specific to school libraries, such as the ability to track student borrowing and the ability to provide reference assistance to students.
+**TDD project** is a simple app with a class that can perform a number of operations. It can be used to get the factorial of a number, reverse a string or play FizzBuzz for multiples of 3 and 5. The tests were first written in Rspec before the production code was written. The app is developed in Ruby.
 
 ### 🛠️ Built With <a name="built-with"></a>
 
@@ -147,7 +147,7 @@ I would like to thank Microverse allowing us learn Ruby
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Bennyjoez/tdd-project/blob/bc9abac1b110d4457c202f12007922f06eddb354/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
