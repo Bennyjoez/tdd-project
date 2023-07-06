@@ -11,12 +11,8 @@ class Solver
 
     factorial
   end
+
   def reverse(word)
-    reversed_word = ""
-    for i in word.length - 1 downto 0
-      reversed_word += word[i]
-    end
-  
-    return reversed_word
+    word.reverse
   end
 end

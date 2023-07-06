@@ -22,11 +22,11 @@ describe Solver do
 
   describe '#reverse' do
     it 'Should reverse word' do
-      expect(@solve.reverse('hello').to(eql('olleh')))
+      expect(@solve.reverse('hello')).to eql('olleh')
     end
 
     it 'Should reverse numbers given as a string' do
-      expect(@solve.reverse('123').to(eql('321')))
+      expect(@solve.reverse('123')).to eql('321')
     end
   end
 end
