@@ -1,7 +1,6 @@
 name: Tests
 
-on:
-  pull_request:
+on: pull_request
 
 jobs:
   rspec:
@@ -14,7 +13,6 @@ jobs:
           ruby-version: 3.1.x
       - name: Setup RSpec
         run: |
-          gem install bundler -v '~> 2.4'
           [ -f Gemfile ] && bundle
           gem install --no-document rspec -v '>=3.0, < 4.0'
       - name: RSpec Report
